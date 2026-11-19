@@ -6,7 +6,9 @@ info:
 http:
   method: GET
   url: http://localhost:8086/planets
-  auth: inherit
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc5NTA5OTExOSwiZXhwIjoxNzk1MTg1NTE5fQ.f01NaaCdbsFZ3MSVdd91F4SJFjzj-YnIOZHzlRbgQvM
 
 settings:
   encodeUrl: true
