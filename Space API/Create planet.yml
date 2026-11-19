@@ -1,0 +1,24 @@
+info:
+  name: Create planet
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:8086/planets
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Mars",
+        "distanceFromSun": 228.0,
+        "type": "Tellurique"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
